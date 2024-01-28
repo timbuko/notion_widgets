@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #7a7a7a
+    }
+
+
+
+    .email:hover {
+      color: #E53935;
+    }
+
+
+    .linkedin:hover {
+      color: #0e76a8;
+    }
+
+    .researchgate:hover {
+      color: #00ccbb;
+    }    
+
+    .aerooptics:hover {
+      color: #AE9142;
+    }
+
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+
+      <!-- Start email Icon -->
+      <div id="email" onclick="navigate(this.id)" class="social">
+        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <!-- End email Icon -->
+
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+
+      <!-- Start researchgate Icon -->
+      <div id="researchgate" onclick="navigate(this.id)" class="social">
+        <span class="icon researchgate"><i class="fa-brands fa-researchgate"></i></span>
+      </div>
+      <!-- End researchgate Icon -->
+
+      <!-- Start aerooptics Icon -->
+      <div id="aerooptics" onclick="navigate(this.id)" class="social">
+        <span class="icon aerooptics"><i class="fa-solid fa-plane"></i></span>
+      </div>
+      <!-- End aerooptics Icon -->
+
+
+
+    </div>
+
+
+
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+       if (id === "email") {
+          window.open("mailto:tbukowski@nd.edu", '_blank').focus(); //Add your email after "mailto:""
+        }
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/in/timbuko", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "researchgate") {
+          window.open("https://www.researchgate.net/profile/Timothy-Bukowski", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "aerooptics") {
+            window.open("https://aero-optics.nd.edu/people/timothy-bukowski/", '_blank').focus(); //Add the url to your pinterest account
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
